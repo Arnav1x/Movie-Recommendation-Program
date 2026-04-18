@@ -45,11 +45,11 @@ def test_movies_list(movies):
     print("Keys in a movie entry:")
     print(list(movies[0].keys()))
 
-    print("Random movie sample:")
+    print("Random movie test:")
     print(movies[random.randint(1,len(movies))])
 
 
 if __name__ == "__main__":
-    #display_unit_tests(ask_user_preferences())
+    display_unit_tests(ask_user_preferences())
     movies = load_movies()
     test_movies_list(movies)
