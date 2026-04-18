@@ -1,2 +1,2 @@
-# Movie-Recommendation-Web-Scraper
-This is a webscraper than scrapes information from websites like IMBD and Letterboxd
+# Movie-Recommendation-Program
+This is a program that asks the user a series of questions in order to recomend them the right movie. 
