@@ -1,0 +1,100 @@
+id,name,date,genre,rating,minute
+1000001,Barbie,2023,Comedy|Adventure,3.86,114
+1000002,Parasite,2019,Comedy|Thriller|Drama,4.56,133
+1000003,Everything Everywhere All at Once,2022,Science Fiction|Adventure|Comedy|Action,4.3,140
+1000004,Fight Club,1999,Drama,4.27,139
+1000005,La La Land,2016,Drama|Comedy|Music|Romance,4.09,129
+1000006,Oppenheimer,2023,Drama|History,4.23,181
+1000007,Interstellar,2014,Science Fiction|Drama|Adventure,4.35,169
+1000008,Joker,2019,Crime|Drama|Thriller,3.85,122
+1000009,Dune,2021,Science Fiction|Adventure,3.9,155
+1000010,Pulp Fiction,1994,Crime|Thriller,4.26,154
+1000011,Spider-Man: Into the Spider-Verse,2018,Adventure|Animation|Science Fiction|Action,4.42,117
+1000012,Whiplash,2014,Drama|Music,4.43,107
+1000013,The Batman,2022,Crime|Mystery|Thriller,3.98,177
+1000014,Get Out,2017,Horror|Mystery|Thriller,4.16,104
+1000015,Knives Out,2019,Mystery|Comedy|Crime,3.99,131
+1000016,Midsommar,2019,Mystery|Drama|Horror,3.78,147
+1000017,The Dark Knight,2008,Action|Drama|Thriller|Crime,4.47,152
+1000018,Inception,2010,Action|Adventure|Science Fiction,4.2,148
+1000019,Saltburn,2023,Comedy|Drama|Thriller,3.43,131
+1000020,Poor Things,2023,Romance|Science Fiction|Comedy,4.05,142
+1000021,Spider-Man: Across the Spider-Verse,2023,Animation|Adventure|Science Fiction|Action,4.45,140
+1000022,The Truman Show,1998,Comedy|Drama,4.21,103
+1000023,Lady Bird,2017,Comedy|Drama,3.85,94
+1000024,The Grand Budapest Hotel,2014,Drama|Comedy,4.24,100
+1000025,The Wolf of Wall Street,2013,Comedy|Drama|Crime,4,180
+1000026,American Psycho,2000,Crime|Thriller|Horror|Drama,3.86,102
+1000027,Spider-Man: No Way Home,2021,Action|Adventure|Science Fiction,3.84,148
+1000028,Dune: Part Two,2024,Adventure|Science Fiction,4.47,167
+1000029,Eternal Sunshine of the Spotless Mind,2004,Science Fiction|Romance|Drama,4.25,108
+1000030,Spirited Away,2001,Family|Fantasy|Animation,4.45,125
+1000031,The Menu,2022,Comedy|Thriller|Horror,3.54,107
+1000032,Gone Girl,2014,Drama|Thriller|Mystery,4.07,149
+1000033,Once Upon a Timeï¿½ï¿½ï¿½ï¿½ï¿½ï,2019,Drama|Thriller|Comedy,3.76,162
+1000034,The Shining,1980,Horror|Thriller,4.24,144
+1000035,Black Swan,2010,Drama|Thriller|Horror,4.15,108
+1000036,Inglourious Basterds,2009,Drama|Thriller|War,4.34,153
+1000037,Little Women,2019,Romance|Drama,4.15,135
+1000038,Forrest Gump,1994,Drama|Comedy|Romance,4.13,142
+1000039,Se7en,1995,Crime|Mystery|Thriller,4.33,127
+1000040,Avengers: Infinity War,2018,Action|Science Fiction|Adventure,3.96,149
+1000041,Glass Onion,2022,Comedy|Crime|Mystery,3.45,140
+1000042,The Silence of the Lambs,1991,Horror|Crime|Thriller|Drama,4.33,119
+1000043,Avengers: Endgame,2019,Science Fiction|Action|Adventure,3.87,181
+1000044,Baby Driver,2017,Crime|Action,3.72,113
+1000045,Kill Bill: Vol. 1,2003,Crime|Action,4.19,111
+1000046,The Godfather,1972,Crime|Drama,4.55,175
+1000047,Django Unchained,2012,Drama|Western,4.28,165
+1000048,Shutter Island,2010,Mystery|Drama|Thriller,4.11,138
+1000049,Call Me by Your Name,2017,Romance|Drama,3.86,132
+1000050,Hereditary,2018,Thriller|Horror|Mystery,3.97,128
+1000051,The Social Network,2010,Drama,3.95,121
+1000052,Her,2013,Science Fiction|Drama|Romance,4.02,126
+1000053,Ratatouille,2007,Animation|Family|Comedy|Fantasy,4.2,111
+1000054,10 Things I Hate About You,1999,Comedy|Romance|Drama,3.99,97
+1000055,Nope,2022,Mystery|Science Fiction|Horror,3.72,130
+1000056,Scott Pilgrim vs. the World,2010,Comedy|Romance|Action,3.87,113
+1000057,The Matrix,1999,Science Fiction|Action,4.16,136
+1000058,Fantastic Mr. Fox,2009,Family|Adventure|Comedy|Animation,4.27,87
+1000059,Taxi Driver,1976,Drama|Crime,4.17,114
+1000060,Dead Poets Society,1989,Drama,4.26,128
+1000061,Jojo Rabbit,2019,War|Drama|Comedy,4.03,108
+1000062,Guardians of the Galaxy,2014,Adventure|Action|Science Fiction,3.78,121
+1000063,Black Panther,2018,Adventure|Science Fiction|Action,3.65,135
+1000064,Arrival,2016,Science Fiction|Mystery|Drama,4.12,116
+1000065,Blade Runner 2049,2017,Science Fiction|Drama,4.12,164
+1000066,The Perks of Being a Wallflower,2012,Drama,3.92,103
+1000067,The Lord of the Rings: The Fellowship of the Ring,2001,Fantasy|Adventure|Action,4.37,179
+1000068,The Shawshank Redemption,1994,Crime|Drama,4.55,142
+1000069,Past Lives,2023,Drama|Romance,4.18,106
+1000070,Good Will Hunting,1997,Drama,4.3,127
+1000071,Coco,2017,Adventure|Animation|Music|Family,4.12,105
+1000072,Mad Max: Fury Road,2015,Adventure|Science Fiction|Action,4.19,121
+1000073,Don't Look Up,2021,Science Fiction|Comedy|Drama,3.01,138
+1000074,Titanic,1997,Drama|Romance,3.81,194
+1000075,Challengers,2024,Drama|Romance,4.06,132
+1000076,Drive,2011,Thriller|Drama|Crime,3.94,100
+1000077,Donnie Darko,2001,Fantasy|Mystery|Drama,3.97,114
+1000078,(500) Days of Summer,2009,Romance|Comedy|Drama,3.66,95
+1000079,Inside Out,2015,Comedy|Family|Animation|Adventure|Drama,3.82,95
+1000080,Anatomy of a Fall,2023,Mystery|Crime|Thriller,4.15,152
+1000081,Up,2009,Animation|Adventure|Family|Comedy,4.09,96
+1000082,Star Wars,1977,Adventure|Action|Science Fiction,4.17,121
+1000083,Avatar: The Way of Water,2022,Action|Adventure|Science Fiction,3.61,192
+1000084,Guardians of the Galaxy Vol. 3,2023,Action|Adventure|Science Fiction,3.96,150
+1000085,Spider-Man: Homecoming,2017,Action|Drama|Adventure|Science Fiction,3.47,133
+1000086,Us,2019,Thriller|Horror,3.65,116
+1000087,Mean Girls,2004,Comedy|Drama,3.83,97
+1000088,Top Gun: Maverick,2022,Action|Drama,3.99,131
+1000089,Soul,2020,Family|Animation|Comedy|Fantasy,3.94,101
+1000090,Back to the Future,1985,Comedy|Science Fiction|Adventure,4.2,116
+1000091,GoodFellas,1990,Drama|Crime,4.48,145
+1000092,The Lighthouse,2019,Horror|Drama|Thriller|Fantasy,4.04,109
+1000093,The Hunger Games,2012,Fantasy|Science Fiction|Adventure,3.66,142
+1000094,Howl's Moving Castle,2004,Fantasy|Adventure|Animation,4.32,119
+1000095,Little Miss Sunshine,2006,Drama|Comedy,4.17,102
+1000096,Deadpool,2016,Action|Comedy|Adventure,3.67,108
+1000097,Harry Potter and the Prisoner of Azkaban,2004,Fantasy|Adventure,4.09,141
+1000098,WALLï¿½,2008,Animation|Science Fiction|Family,4.2,98
+1000099,Aftersun,2022,Drama,4.24,102

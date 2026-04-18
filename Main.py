@@ -1,4 +1,15 @@
+import csv
 
+def load_csv():
+    movies = []
+
+    with open("movies_dataset_simple.csv", "r") as file:
+        reader = csv.DictReader(file)
+
+        for row in reader:
+            movies.append(row)
+
+    return movies
 
 
 
@@ -20,4 +31,4 @@ def display_user_preferences(Preferences):
     print(f'Date Range: {Preferences["date_range"]}')
     print(f'Actors/Actresses: {Preferences["actors"]}')
 
-display_user_preferences(ask_user_preferences())
+load_csv()
