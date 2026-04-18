@@ -20,7 +20,9 @@ def load_movies():
 
 def ask_user_preferences():
     """
-    Asks users their preferences and stores them in varibles
+    Collects user preferences for movie recommendations and stores in a dictionary. 
+
+    Returns: Preferences(dict) containing genres, date_range, and actors as keys. Values will be taken from user input. 
     """
     Preferences = {}
 
@@ -39,8 +41,9 @@ def display_unit_tests(Preferences):
     print(f'Actors/Actresses: {Preferences["actors"]}')
 
 def test_movies_list(movies):
+    """Unit test to verify that the csv was correctly read"""
 
-    print("Total movies loaded:", len(movies))
+    print("Total movies loaded:", len(movies) - 1)
 
     print("Keys in a movie entry:")
     print(list(movies[0].keys()))
@@ -50,6 +53,9 @@ def test_movies_list(movies):
 
 
 if __name__ == "__main__":
+    # Run user preferences unit test 
     display_unit_tests(ask_user_preferences())
+    # Load csv
     movies = load_movies()
+    # Run moives csv unit test
     test_movies_list(movies)
