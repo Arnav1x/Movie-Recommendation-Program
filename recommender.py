@@ -158,9 +158,7 @@ class MovieRecommender:
     def _category_is_set(preferences, category):
         """
         True if the user actually filled this preference category in. Empty
-        lists count as unset, and the special case `(None, None)` for
-        year_range also counts as unset (a tuple with elements is otherwise
-        always truthy in Python).
+        lists count as unset.
         """
         value = preferences.get(category)
         if not value:
