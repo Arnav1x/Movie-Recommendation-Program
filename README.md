@@ -10,7 +10,5 @@ recommender.py — This is the file that does the actual thinking and work of th
 
 recommender.py — This is the file that does the actual thinking and work of the project. It uses the MovieRecommender class which is the bulk of the project. Main.py calls this, reccomender.py does the calculations, and feeds it back so it can be displayed.
 
-recommender.py — This is the file that does the actual thinking and work of the project. It uses the MovieRecommender class which is the bulk of the project. Main.py calls this, reccomender.py does the calculations, and feeds it back so it can be displayed.
-
 test_recommender.py — We also split the tests into a new file. This runs around 20 small tests and the scoring and filtering to make sure everything is going on well. 
 
