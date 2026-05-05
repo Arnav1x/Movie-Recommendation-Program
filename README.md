@@ -6,7 +6,11 @@ In check-in 1, the entire program was in one file. As we went on, the project be
 
 Main.py — This is the file that you're supposed to run in order for everything to word. It'll ask the user four questions, and then display the final list of movie recomendations. It doesn't do any of the filtering, it's just the user interface per se. 
 
-recommender.py — This is the file that does the actual thinking and work of the project. It uses the MovieRecommender class which is the bulk of the project. Main.py calls this, reccomender.py does the calculations, and feeds it back so it can be displayed. 
+recommender.py — This is the file that does the actual thinking and work of the project. It uses the MovieRecommender class which is the bulk of the project. Main.py calls this, reccomender.py does the calculations, and feeds it back so it can be displayed.
+
+recommender.py — This is the file that does the actual thinking and work of the project. It uses the MovieRecommender class which is the bulk of the project. Main.py calls this, reccomender.py does the calculations, and feeds it back so it can be displayed.
+
+recommender.py — This is the file that does the actual thinking and work of the project. It uses the MovieRecommender class which is the bulk of the project. Main.py calls this, reccomender.py does the calculations, and feeds it back so it can be displayed.
 
 test_recommender.py — We also split the tests into a new file. This runs around 20 small tests and the scoring and filtering to make sure everything is going on well. 
 
