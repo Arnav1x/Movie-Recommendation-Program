@@ -30,7 +30,7 @@ We still need to make more tests regarding how the ranking system works well.
 Since Main.Py only interacts with the user, and raises ValueErrors immediatley, we haven't done any main tests, only recomender so far.  
 We felt that most of the errors would be found within the logic part of the program, so focused on testing this first. 
 """
-
+ 
 class TestFilterByGenres(unittest.TestCase):
     """`filter_by_genres` should match any-of (OR), case-insensitive."""
 

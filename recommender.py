@@ -122,21 +122,17 @@ class MovieRecommender:
             if self._year_in_range(movie, start, end):
                 total += weight
 
-        # --- Actors: half done ---
-        # Right now this just gives full credit if ANY actor matches, instead of
-        # a fraction. Need to swap this for _overlap_ratio like genres uses.
         if self._category_is_set(preferences, "actors"):
-            wanted = set(_normalize_terms(preferences["actors"]))
-            movie_actors = _split_field(movie.get("actors", ""))
-            if wanted & movie_actors:
-                total += weight  # TODO: should be proportional, not all-or-nothing
+            total += weight * self._overlap_ratio(
+                _normalize_terms(preferences["actors"]),
+                _split_field(movie.get("actors", "")),
+            )
 
-        # --- Themes: TODO ---
-        # Themes are descriptive phrases like "moving relationship stories" so
-        # exact match won't work — need to do substring matching. Helper
-        # _theme_match_ratio is already written but not hooked up yet.
         if self._category_is_set(preferences, "themes"):
-            pass  # TODO:
+            total += weight * self._theme_match_ratio(
+                _normalize_terms(preferences["themes"]),
+                movie.get("theme", "").lower(),
+            )
 
         return total
 

@@ -78,7 +78,7 @@ def ask_user_preferences():
     print("Press Enter to skip any question.\n")
 
     genres_raw = input("What genres are you interested in?\n  (e.g. Action, Comedy, Drama): ")
-    year_raw   = input("What release year range?\n  (e.g. 2010-2020): ")
+    year_raw   = input("What release year range?\n  (e.g. 2010-2026): ")
     actors_raw = input("Any preferred actors or actresses?\n  (e.g. Margot Robbie, Tom Hanks): ")
     themes_raw = input("Any keywords or themes?\n  (e.g. family drama, dark thriller): ")
 
