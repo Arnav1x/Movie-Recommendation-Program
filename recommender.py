@@ -37,6 +37,15 @@ class MovieRecommender:
 
     SCORED_CATEGORIES = ("genres", "year_range", "actors", "themes")
 
+    # Hierarchy: genres > themes > (gap) > actors > year_range.
+    # Genres + themes carry 75% of the score; actors/year are tiebreakers.
+    CATEGORY_WEIGHTS = {
+        "genres":     45,
+        "themes":     30,
+        "actors":     15,
+        "year_range": 10,
+    }
+
     def __init__(self, movies):
         self.movies = list(movies)
 
@@ -94,42 +103,42 @@ class MovieRecommender:
 
     def score_movie(self, movie, preferences):
         """
-        This needs a lot of work, but is intended to give a 0-100 score to the user
-        to see how well the movie matches with their taste.
-
-        Currently working: genres, year_range.
-        Half done:        actors (counts matches but scoring math is off).
-        Not started yet:  themes.
+        Returns a 0-100 score based on how well the movie matches the user's
+        preferences. Categories are weighted by importance (genres > themes
+        >> actors > year_range). Categories the user left blank are skipped
+        and the remaining weights are renormalized so a perfect match across
+        the active categories still scores 100.
         """
         active = [c for c in self.SCORED_CATEGORIES
-                if self._category_is_set(preferences, c)]
+                  if self._category_is_set(preferences, c)]
         if not active:
             return self._rating_as_score(movie)
 
-        weight = 100.0 / len(active)
+        total_weight = sum(self.CATEGORY_WEIGHTS[c] for c in active)
+        scale = 100.0 / total_weight
+        w = {c: self.CATEGORY_WEIGHTS[c] * scale for c in active}
+
         total = 0.0
 
-        #  Genres: working 
-        if self._category_is_set(preferences, "genres"):
-            total += weight * self._overlap_ratio(
+        if "genres" in w:
+            total += w["genres"] * self._overlap_ratio(
                 _normalize_terms(preferences["genres"]),
                 _split_field(movie.get("genre", "")),
             )
 
-        # --- Year range: working ---
-        if self._category_is_set(preferences, "year_range"):
+        if "year_range" in w:
             start, end = preferences["year_range"]
             if self._year_in_range(movie, start, end):
-                total += weight
+                total += w["year_range"]
 
-        if self._category_is_set(preferences, "actors"):
-            total += weight * self._overlap_ratio(
+        if "actors" in w:
+            total += w["actors"] * self._overlap_ratio(
                 _normalize_terms(preferences["actors"]),
                 _split_field(movie.get("actors", "")),
             )
 
-        if self._category_is_set(preferences, "themes"):
-            total += weight * self._theme_match_ratio(
+        if "themes" in w:
+            total += w["themes"] * self._theme_match_ratio(
                 _normalize_terms(preferences["themes"]),
                 movie.get("theme", "").lower(),
             )
