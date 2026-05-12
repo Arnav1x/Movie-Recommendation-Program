@@ -81,7 +81,7 @@ class MovieRecommender:
         return [m for m in movies if wanted & _split_multi(m.get("genre", ""))]
 
     def filter_by_themes(self, movies, themes):
-        """Filters movies by substring-matching keywords inside of the collums "theme" and "description" in the dataset
+        """Filters movies by string matching keywords inside of the collums "theme" and "description" in the dataset
 
         Args:
             movies (list[dict]): the movies to filter.
