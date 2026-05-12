@@ -37,7 +37,7 @@ class MovieRecommender:
 
     SCORED_CATEGORIES = ("genres", "year_range", "actors", "themes")
 
-    # Hierarchy: genres > themes > (gap) > actors > year_range.
+    # Hierarchy: genres > themes > (big gap) > actors > year_range.
     # Genres + themes carry 75% of the score; actors/year are tiebreakers.
     CATEGORY_WEIGHTS = {
         "genres":     45,
