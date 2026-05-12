@@ -1,7 +1,7 @@
 """
 This is the brains of the project, while Main is the face of the project.
 
-All the thinking is found here, including filtering, deal-breakers,
+All the thinking and logic is found here, including filtering, deal-breakers,
 scoring, sorting, and ranking.
 """
 
