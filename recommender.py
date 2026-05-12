@@ -9,7 +9,7 @@ scoring, sorting, and ranking.
 def _split_multi(value):
     """
     Splits a field on both `|` and `,` and returns a lowercased set.
-    Genres/themes use `|`; actors/directors use `,` -- this handles both.
+    Genres/themes use `|`; actors/directors use `,` so this handles both.
     """
     if not value:
         return set()
@@ -32,7 +32,7 @@ class MovieRecommender:
     `actors`, `director`) and ranks them by how well they match a user's
     preferences.
 
-    A `preferences` dict has the shape:
+    The `preferences` dict has this shape:
         {
             "genres":     {"values": list[str], "deal_breaker": bool},
             "themes":     {"values": list[str], "deal_breaker": bool},
@@ -44,18 +44,18 @@ class MovieRecommender:
         }
     """
 
-    # Hierarchy: genres > themes >> directors > actors > rating/runtime > year
+    # Order of importance/Hierarchy is this: genres > themes >(substancial gap)> directors > actors > rating/runtime > year
     # Genres + themes together carry over half the score; there's a decent
     # gap before directors/actors; rating/runtime/year are tiebreakers.
     CATEGORY_WEIGHTS = {
-        "genres":     32,
+        "genres":     32, #Genres and themes make sense to be the strongest, it's typically the first questions asked when searching for a movie. 
         "themes":     23,
-        # --- decent gap here ---
+        # gap 
         "directors":  15,
         "actors":     12,
-        "min_rating":  6,
-        "runtime":     6,
-        "year_range":  6,
+        "min_rating":  6, #Thought to make the "specifics" less important. These should just be a small bonus, not a defining factor. All these only get 6
+        "runtime":     6, #For example if a user puts in the year range 2000-2026, there may be a movie from 1999 that matches the rest of the criteria perfectly. 
+        "year_range":  6, #It would be unfair for that movie to get docked too low
     }
 
     RUNTIME_SCORE_FALLOFF = 60          # minutes: score drops to 0 at this distance
@@ -64,7 +64,7 @@ class MovieRecommender:
     def __init__(self, movies):
         self.movies = list(movies)
 
-    # filteriong Section 
+    # Filteriong Section 
 
     def filter_by_genres(self, movies, genres):
         wanted = set(_normalize_terms(genres))
