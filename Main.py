@@ -104,7 +104,7 @@ def ask_user_preferences():
     print("  - Deal breaker = movies that don't match are excluded entirely.")
     print("  - Otherwise   = it just affects the score and ranking.\n")
 
-    # --- top of hierarchy: genres + themes ---
+    # Most important questions in terms hierarchy; genres and themes(through keywords)
     genres_raw = input("1) What genres are you interested in?\n   (e.g. Action, Comedy, Drama): ")
     genres = parse_list(genres_raw)
     genres_db = ask_deal_breaker("genres") if genres else False
@@ -113,7 +113,7 @@ def ask_user_preferences():
     themes = parse_list(themes_raw)
     themes_db = ask_deal_breaker("keywords/themes") if themes else False
 
-    # --- decent gap before the secondary tier ---
+    # Pretty big gap in terms of weightage 
     print("\n" + "-" * 60 + "\n")
 
     directors_raw = input("3) Any preferred directors?\n   (e.g. Christopher Nolan, Greta Gerwig): ")
